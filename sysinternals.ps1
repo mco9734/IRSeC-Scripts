@@ -14,7 +14,7 @@ Set-Location ..
 Set-Location ..
 Move-Item -Path .\sysmon-modular-master\sysmon-modular-master\sysmonconfig.xml -Destination .\
 
-sysmon.exe -i sysmonconfig.xml -accepteula
+.\sysmon.exe -i sysmonconfig.xml -accepteula
 
 eventvwr.msc
 
