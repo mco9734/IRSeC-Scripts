@@ -1,5 +1,5 @@
 Invoke-WebRequest "https://live.sysinternals.com/Autoruns.exe" -OutFile "nothing.exe"
-Invoke-WebRequest "https://live.sysinternals.com/Sysmon.exe" -Outfile "garbage.exe"
+Invoke-WebRequest "https://live.sysinternals.com/Sysmon.exe" -Outfile "sysmon.exe"
 Invoke-WebRequest "https://live.sysinternals.com/Procmon.exe" -Outfile "null.exe"
 Invoke-WebRequest "https://live.sysinternals.com/procexp.exe" -Outfile "epic.exe"
 
