@@ -13,6 +13,10 @@ netsh advfirewall firewall add rule name="DNS" action=allow protocol=udp localpo
 netsh advfirewall firewall add rule name="DNS" action=allow protocol=udp remoteport=53 dir=in 
 netsh advfirewall firewall add rule name="DNS" action=allow protocol=udp localport=53 dir=in 
 
+# RDP 
+netsh advfirewall firewall add rule name="RDP" dir=in protocol=tcp remoteport=3389 action=allow remoteip=10.5.2.10
+netsh advfirewall firewall add rule name="RDP" dir=out protocol=tcp remoteport=3389 action=allow remoteip=10.5.2.10
+
 # AD Services
 netsh advfirewall firewall add rule name="AD1-tcp-in" action=allow protocol=tcp remoteport=389,445,88,135,3268 dir=in remoteip=10.5.1.60
 netsh advfirewall firewall add rule name="AD1-udp-in" action=allow protocol=udp remoteport=389,445,88,135,123 dir=in remoteip=10.5.1.60
